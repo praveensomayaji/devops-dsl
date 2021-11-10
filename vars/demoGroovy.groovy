@@ -3,11 +3,11 @@ def call(body){
   body.resolveStrategy = Closure.DELEGATE_FIRST
   body.delegate = config
   body()
-  def p_mailList  = config.mailList ?: 'praveensomayaji@xyz.com';
+  def p_mailList  = config.mailList ?: 'def@xyz.com';
   
   properties([
     parameters([
-      stringParam(name: 'mail', defaultValue: 'praveensomayaji@xyz.com', description: 'param description')
+      stringParam(name: 'mail', defaultValue: 'mno@xyz.com', description: 'param description')
       ])
     ])
     
