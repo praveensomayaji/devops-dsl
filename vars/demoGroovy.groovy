@@ -17,3 +17,4 @@ def call(body){
   }
   echo params.mail
 }
+}
