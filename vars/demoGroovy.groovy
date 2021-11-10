@@ -3,5 +3,5 @@ def call(body){
   body.delegate = config
   body()
   def p_mailList  = config.mailList;
-  echo "demo dsl success"
+  echo p_mailList
 }
