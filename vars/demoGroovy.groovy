@@ -10,5 +10,5 @@ def call(body){
       ])
     ])
     
-  echo param.mail
+  echo params.mail
 }
