@@ -10,6 +10,10 @@ def call(body){
       stringParam(name: 'mail', defaultValue: config.mailList, description: 'param description')
       ])
     ])
-    
+     
+  node("${config.node}"){
+    stage('code checkout'){
+      git 'https://github.com/praveensomayaji/DevOpsClassCodes.git'
+  }
   echo params.mail
 }
