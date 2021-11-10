@@ -14,7 +14,7 @@ def call(body){
   node("${config.node}"){
     stage('code checkout'){
       git 'https://github.com/praveensomayaji/DevOpsClassCodes.git'
-      bat mvn compile
+      bat 'mvn compile'
   }
   echo params.mail
 }
