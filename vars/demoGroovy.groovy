@@ -4,6 +4,7 @@ def call(body){
   body.delegate = config
   body()
   def p_mailList  = config.mailList ?: 'def@xyz.com';
+  def p_node = config.node;
   
   properties([
     parameters([
@@ -11,7 +12,7 @@ def call(body){
       ])
     ])
      
-  node("${config.node}"){
+  node("${p_node}"){
     stage('code checkout'){
       git 'https://github.com/praveensomayaji/DevOpsClassCodes.git'
   }
