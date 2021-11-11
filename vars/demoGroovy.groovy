@@ -7,7 +7,7 @@ def call(body){
   
   properties([
     parameters([
-      stringParam(name: 'mail', defaultValue: config.mailList, description: 'param description')
+      stringParam(name: 'mail', defaultValue: ${p_mailList}, description: 'param description')
       ])
     ])
      
